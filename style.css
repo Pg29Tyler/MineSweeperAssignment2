@@ -1,13 +1,103 @@
-body{
+/*Element Selectors*/
+body {
     text-align: center;
+    background-color:#545b5e;
 }
 
+header {
+    padding: 0;
+    background-color: #3b4042;
+    color: #F6F7EB;
+    
+}
+
+img {
+    height: 100px;
+}
+
+/*Class Selectors*/
 .nav-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size:x-large;
+    
 }
     .nav-list li {
         display: inline;
         margin-right: 20px;
     }
+
+.sub-Header {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+    .sub-Header li{
+        font-size: 4em;
+    }
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px
+}
+
+.box-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 11rem;
+    flex:2;
+}
+
+.sidebar-Container{
+     flex: 0 0 10%;
+}
+
+.sidebar {
+    padding: 30px;
+    padding-top: 2%;
+    margin-top: 30%;
+    text-align: center;
+    border-radius: 10px;
+    color: #F6F7EB;
+    background-color: #3b4042;
+    font-size: 24px;
+    
+}
+.footer-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #3b4042;
+    color: #F6F7EB;
+    font-size: 1.5em;
+}
+
+/*ID Selectors*/
+#EasyBoard {
+    text-align: center;
+    background-color: aliceblue;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+#Intermediate-Board {
+    text-align: center;
+    background-color: aliceblue;
+    margin: 20px;
+    width: 500px;
+    height: 500px;
+}
+
+#Hard-Board {
+    text-align: center;
+    background-color: aliceblue;
+    margin: 20px;
+    width: 40em;
+    height: 40em;
+}

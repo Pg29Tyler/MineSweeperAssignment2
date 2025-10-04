@@ -2,21 +2,56 @@
 <html>
 <head>
     <title>Minesweeper</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <!--Linking the stylesheet-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>MineSweeper Hard</h1>
+
+        <!--Creating the Nav that links each level of the game together-->
         <nav>
             <ul class=" nav-list flex-container">
                 <li><a href="main.html">Beginner</a></li>
-                <li><a href="intermediate.html"> intermediate</a></li>
-                <li><a href="hard.html"> hard</a></li>
+                <li><a href="intermediate.html">Intermediate</a></li>
+                <li><a href="hard.html">Hard</a></li>
             </ul>
         </nav>
     </header>
+
+    <!--Creating the sub header for the flag UI and a timer with placeholder values -->
+    <ul class="sub-Header">
+        <li><img src="minesweeperflag.png" alt="MineSweeperFlag"> 10</li>
+        <li>0</li>
+    </ul>
+    <div class="main-container">
+        <div class="box-Container">
+
+            <!--Creating an empty div to use later in JS for the board-->
+            <div id="Hard-Board">
+            </div>
+        </div>
+
+        <!--Creating the sidebar-->
+        <div class="sidebar-Container">
+            <aside class="sidebar">
+                <h3>Right-Click</h3>
+                <p>Press Right click to place a mine</p>
+                <h3>Left-Click</h3>
+                <p>Press Left-click to discover a space</p>
+            </aside>
+        </div>
+    </div>
+
+    <!--Linking the JavaScript-->
     <script src="script.js"></script>
 
-
+    <!--Creating the footer for the copyright-->
+    <div class="footer-container">
+        <footer>
+            <p>&copy; Tyler Jablonski All Rights Reserved. </p>
+        </footer>
+    </div>
 </body>
 </html>
