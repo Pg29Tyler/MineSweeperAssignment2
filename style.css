@@ -41,18 +41,11 @@ img {
 
 .main-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     padding: 20px
 }
 
-.box-Container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 11rem;
-    flex:2;
-}
 
 .sidebar-Container{
      flex: 0 0 10%;
@@ -67,7 +60,7 @@ img {
     color: #F6F7EB;
     background-color: #3b4042;
     font-size: 24px;
-    
+    justify-content: left;
 }
 .footer-container {
     padding-top: 20px;
@@ -100,4 +93,25 @@ img {
     margin: 20px;
     width: 40em;
     height: 40em;
+}
+
+#game-container{
+    display: grid;
+    grid-template-columns: repeat(5,100px);
+    grid-gap: 5px;
+    justify-content: center;
+    padding-left: 11rem;
+    text-align: center;
+    flex: 2;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border: 3px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
 }
