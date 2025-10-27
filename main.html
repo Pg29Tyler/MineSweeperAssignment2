@@ -8,21 +8,12 @@
 <body>
     <header>
         <h1>MineSweeper</h1>
-
-        <!--Creating the Nav that links each level of the game together-->
-        <nav>
-            <ul class=" nav-list flex-container">
-                <li><a href="main.html">Beginner</a></li>
-                <li><a href="intermediate.html">Intermediate</a></li>
-                <li><a href="hard.html">Hard</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!--Creating the sub header for the flag UI and a timer with placeholder values -->
     <ul class="sub-Header">
-        <li><img src="minesweeperflag.png" alt="MineSweeperFlag"/> 10</li>
-        <li>0</li>
+        <li id="Flags">20</li>
+        <li id="Counter">0</li>
     </ul>
     <div class="main-container">
 
@@ -33,13 +24,13 @@
         <div class="sidebar-Container">
             <aside class="sidebar">
                 <h3>Right-Click</h3>
-                <p>Press Right click to place a mine</p>
+                <p>Press Right click to place a flag</p>
                 <h3>Left-Click</h3>
                 <p>Press Left-click to discover a space</p>
             </aside>
         </div>
     </div>
-
+    <button id="restartBtn">Restart Game</button>
     <!--Linking the JavaScript-->
     <script type="module" src="app.js"></script>
 
